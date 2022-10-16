@@ -51,6 +51,6 @@ for row in df.itertuples():
     cur.execute(f"""
         INSERT INTO nutrients.data
         VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-    """, (row.Food, row.Measure, row.Grams, row.Calories, row.Protein, row.Fat, row.Sat_Fat, row.Fiber, row.Carbs, row.Category))
+    """, (str(row.Food), str(row.Measure), row.Grams, row.Calories, row.Protein, row.Fat, row.Sat_Fat, row.Fiber, row.Carbs, row.Category))
 conn.commit()
 cur.close()
