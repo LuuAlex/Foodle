@@ -54,7 +54,7 @@ while user in [1, 2, 3]:
                 y_axis += [row[3]]
             p.plot(x_axis, y_axis)
             p.xlabel('Date')
-            p.ylabel('Carbohydrate Intake')
+            p.ylabel('Fat Intake')
             p.show()
         elif x == 3:
             for row in get_user_data(username):
@@ -62,7 +62,7 @@ while user in [1, 2, 3]:
                 y_axis += [row[4]]
             p.plot(x_axis, y_axis)
             p.xlabel('Date')
-            p.ylabel('Fat Intake')
+            p.ylabel('Carbohydrate Intake')
             p.show()
         else:
             x = input('Please type in a valid option.')
