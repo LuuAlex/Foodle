@@ -48,7 +48,7 @@ while user in [1, 2, 3]:
             p.xlabel('Date')
             p.ylabel('Protein Intake')
             p.show()
-        elif x == 3:
+        elif x == 4:
             for row in get_user_data(username):
                 x_axis += [row[0]]
                 y_axis += [row[3]]
@@ -56,7 +56,7 @@ while user in [1, 2, 3]:
             p.xlabel('Date')
             p.ylabel('Carbohydrate Intake')
             p.show()
-        elif x == 4:
+        elif x == 3:
             for row in get_user_data(username):
                 x_axis += [row[0]]
                 y_axis += [row[4]]
