@@ -1,6 +1,7 @@
 # import stuff
 from tabulate import tabulate
 from test_and_helper.add_get_database import *
+from add_user_entry import *
 
 username = input('Please type your name to start.')
 
@@ -13,13 +14,13 @@ user = input('''Welcome back to Foodle! Please choose what you would like to vie
 
 while user in [1, 2, 3]:
     if user == 1:
-        data = [[]]
-        for i in 
-
+        run()
+"""
     elif user == 2:
         fi
     
     elif user == 3:
 
     else:
+"""
         
