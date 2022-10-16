@@ -20,7 +20,7 @@ while user in [1, 2, 3]:
     elif user == 2:
         data = get_user_data(username)
         
-        print(data)
         print(tabulate(data, headers=['Caloric Intake', 'Protein Intake', 'Fat Intake', 'Carbohydrate Intake']))
+        user = -1
 
         
