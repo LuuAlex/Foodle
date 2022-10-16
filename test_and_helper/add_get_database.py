@@ -11,8 +11,12 @@ def add_entry(user_id, date, sex, age, height, weight, caloric_intake, protein_g
 
 def get_user_info(user_id):
     cur.execute(f"SELECT * FROM people.data WHERE user_id='{user_id}'")
-    row = cur.fetchall()[0]
-    return row[2], row[3], row[4], row[5]
+    row = cur.fetchall()
+    if len(row) == 0:
+        return
+    else:
+        row = row[0]
+        return row[2], row[3], row[4], row[5]
     
 def get_user_data(user_id):
     cur.execute(f"SELECT * FROM people.data WHERE user_id='{user_id}'")

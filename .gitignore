@@ -2,3 +2,4 @@
 .idea
 /hidden files
 test_and_helper/__pycache__
+/__pycache__

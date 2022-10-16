@@ -1,7 +1,7 @@
 # import stuff
 from tabulate import tabulate
 from test_and_helper.add_get_database import *
-from test_and_helper.database_access import *
+from add_user_entry import *
 
 username = input('Please type your name to start.')
 
@@ -19,8 +19,4 @@ while user in [1, 2, 3]:
         print(data)
         print(tabulate(data, headers=['Caloric Intake', 'Protein Intake', 'Fat Intake', 'Carbohydrate Intake']))
 
-    
-    # elif user == 3:
-
-    # else:
         
