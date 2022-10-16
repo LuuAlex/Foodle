@@ -7,6 +7,11 @@ def add_entry(user_id, date, sex, age, height, weight, caloric_intake, protein_g
     """, (user_id, date, sex, age, height, weight, caloric_intake, protein_grams_intake, carb_grams_intake, fat_grams_intake))
     conn.commit()
 
+def get_user_info(user_id):
+    cur.execute(f"SELECT * FROM people.data WHERE user_id='{user_id}'")
+    row = cur.fetchall()[0]
+    return row[2], row[3], row[4], row[5]
+
 def get_intake(food, column_int):
     cur.execute(f"SELECT * FROM nutrients.data WHERE food='{food}'")
     return cur.fetchall()[0][column_int]
