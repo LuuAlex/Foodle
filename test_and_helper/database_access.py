@@ -1,7 +1,7 @@
 import psycopg2
 
 # Note: Regenerate Password In "test_password.txt" Before Use
-password = open("test files/test_password.txt", "r").read()
+password = open("test_and_helper/test_password.txt", "r").read()
 # password = open("hidden files/real_password.txt", "r").read()
 
 def get_database():

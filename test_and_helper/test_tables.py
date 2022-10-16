@@ -1,6 +1,5 @@
 from database_access import *
-
-cur, conn = get_database()
+cur, conn = database_access.get_database()
 
 # Print all rows in table
 cur.execute("SELECT * FROM people.data")
