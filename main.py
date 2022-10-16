@@ -1,6 +1,7 @@
 # import stuff
 from tabulate import tabulate
 from test_and_helper.add_get_database import *
+from test_and_helper.database_access import *
 
 username = input('Please type your name to start.')
 
@@ -12,14 +13,14 @@ user = input('''Welcome back to Foodle! Please choose what you would like to vie
 
 
 while user in [1, 2, 3]:
-    if user == 1:
-        data = [[]]
-        for i in 
+    if user == 2:
+        data = get_user_data(username)
+        
+        print(data)
+        print(tabulate(data, headers=['Caloric Intake', 'Protein Intake', 'Fat Intake', 'Carbohydrate Intake']))
 
-    elif user == 2:
-        fi
     
-    elif user == 3:
+    # elif user == 3:
 
-    else:
+    # else:
         
