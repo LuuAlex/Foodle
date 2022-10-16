@@ -1,4 +1,4 @@
-from database_access import *
+from .database_access import *
 cur, conn = get_database()
 
 def add_entry(user_id, date, sex, age, height, weight, caloric_intake, protein_grams_intake, carb_grams_intake, fat_grams_intake):
