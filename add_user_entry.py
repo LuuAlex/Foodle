@@ -1,5 +1,3 @@
-import math
-import pandas as pd
 from datetime import date
 from test_and_helper.database_access import *
 from test_and_helper.add_get_database import *
@@ -10,6 +8,7 @@ def run(username=None):
     info = get_user_info(username)
     if info:
         curr_date = date.today()
+        #curr_date = date.today() + date.timedelta(days=1)
         user_sex = info[0]
         user_age = info[1]
         user_height = info[2]
