@@ -16,12 +16,11 @@ while user in [1, 2, 3]:
     if user == 1:
         add_user_entry.run(username)
         user = -1
-"""
-    elif user == 2:
-        fi
     
-    elif user == 3:
+    elif user == 2:
+        data = get_user_data(username)
+        
+        print(data)
+        print(tabulate(data, headers=['Caloric Intake', 'Protein Intake', 'Fat Intake', 'Carbohydrate Intake']))
 
-    else:
-"""
         
