@@ -1,5 +1,5 @@
 from add_get_database import *
 
-add_entry("test test", "DATE", "M", 10, 10, 10, 10, 10,10, 10)
+# add_entry("test test", "DATE", "M", 10, 10, 10, 10, 10,10, 10)
 
-print(get_intake("Banana", 3))
+print(get_intake("Oatmeal", 3))
